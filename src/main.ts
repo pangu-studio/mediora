@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import registerListeners from "./helpers/ipc/listeners-register";
+import log from "electron-log/main";
 // "electron-squirrel-startup" seems broken when packaging with vite
 //import started from "electron-squirrel-startup";
 import path from "path";
@@ -9,6 +10,7 @@ import {
 } from "electron-devtools-installer";
 
 const inDevelopment = process.env.NODE_ENV === "development";
+log.initialize();
 
 function createWindow() {
   const preload = path.join(__dirname, "preload.js");

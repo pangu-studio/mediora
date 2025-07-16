@@ -6,14 +6,21 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        appName: "electron-shadcn",
+        appName: "Mediora",
         titleHomePage: "Home Page",
         titleSecondPage: "Second Page",
       },
     },
+    "zh-CN": {
+      translation: {
+        appName: "Mediora",
+        titleHomePage: "首页",
+        titleSecondPage: "第二页",
+      },
+    },
     "pt-BR": {
       translation: {
-        appName: "electron-shadcn",
+        appName: "Mediora",
         titleHomePage: "Página Inicial",
         titleSecondPage: "Segunda Página",
       },
